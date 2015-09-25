@@ -1,0 +1,27 @@
+{% block branding %}
+<h1 id="Politcis2016"><a href="{% url 'admin:index' %}">Politics 2016</a></h1>
+<p>Politics 2016!!! Are you ready to RUMBLE???!!!!!</p>
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}Politics 2016{% endblock %}</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">Blog</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
