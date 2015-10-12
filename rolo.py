@@ -13,46 +13,45 @@ class RoloFunction(object):
 		self.input_format= input_format
 		self.error_lines= []
 		self.rolodex_data= []
-
-		self.formats = { 'format_one': ('lastname', 'firstname', 'phonenumber', 'color', 'zipcode')
-						 'format_two': ('firstname', 'lastname', 'color', 'zipcode', 'phonenumber')
+		self.formats = { 'format_one': ('lastname', 'firstname', 'phonenumber', 'color', 'zipcode'),
+						 'format_two': ('firstname', 'lastname', 'color', 'zipcode', 'phonenumber'),
 						 'format_three': ('firstname', 'lastname', 'zipcode', 'phonenumber', 'color')
-					}
+				}
 				# Format 1
 				# if Regex.IsMatch(row([-1] == ^[0-9]{5+}$))
 				# Example: Lastname, Firstname, (703)-742-0996, Blue, 10013 				
 				# Format Number One: Lastname, Firstname, (000)-000-0000, Color, 00000							
-				format_one = {
-					"color": [-2], 
-					"firstname": [1],
-					"lastname": [0], 
-					"phonenumber": [-3], 
-					"zipcode": [-1]
-				}
+				# format_one = {
+				# 	"color": [-2], 
+				# 	"firstname": [1],
+				# 	"lastname": [0], 
+				# 	"phonenumber": [-3], 
+				# 	"zipcode": [-1]
+				# }
 
 				# if Regex.IsMatch(row([3] == ^[0-9]{5+}$))
 				# Example Firstname Lastname, Red, 11237, 703 955 0373 
 				# Format Number Two: Firstname Lastname, Color, 00000, 000 000 0000
-				format_two = {
-					"color": [-5], 
-					"firstname": [0],
-					"lastname": [-6], 
-					"phonenumber": [-3:], 
-					"zipcode": [-4]
-				}
+				# format_two = {
+				# 	"color": [-5], 
+				# 	"firstname": [0],
+				# 	"lastname": [-6], 
+				# 	"phonenumber": [-3:], 
+				# 	"zipcode": [-4]
+				# }
 
-				# if Regex.IsMatch(row([2] == ^[0-9]{5+}$))
-				# Example Firstname, Lastname, 10013, 646 111 0101, Green
-				# Format Number Three: Firstname, Lastname, 00000, 000 000 0000, Color
-				format_three = {
-					"color": [-1], 
-					"firstname": [0],
-					"lastname": [-6], 
-					"phonenumber": [-4: -6], 
-					"zipcode": [-5]
-				}
+				# # if Regex.IsMatch(row([2] == ^[0-9]{5+}$))
+				# # Example Firstname, Lastname, 10013, 646 111 0101, Green
+				# # Format Number Three: Firstname, Lastname, 00000, 000 000 0000, Color
+				# format_three = {
+				# 	"color": [-1], 
+				# 	"firstname": [0],
+				# 	"lastname": [-6], 
+				# 	"phonenumber": [-4: -6], 
+				# 	"zipcode": [-5]
+				# }
 
-		}
+		# }
 		
 	def process(filename):
 		"""Returns the average value from the last column of filename"""
