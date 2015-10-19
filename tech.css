@@ -1,0 +1,77 @@
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+a img {
+    border: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* BASIC */
+body {
+    font-family: Trebuchet MS,Arial,Tahoma,Century gothic, sans-serif;
+    color: #000;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+img {
+    border: 0;
+    margin: 0;
+}
+
+a {
+    color: #156a95;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+blockquote {
+    color: #777;
+    font-style: italic;
+    padding: 10px 10px 10px 20px;
+    border-left:5px solid #fff;
+    margin-left:30px;
+    background:#fff;
+}
+
+.clear {
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+table td,table th {
+    text-align: left;
+    border: 1px solid #fff;
+    padding: .4em .8em;
+}
+
+table th {
+    background: #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1px solid #fff;
+}
