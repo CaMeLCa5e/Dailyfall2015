@@ -1,1 +1,3 @@
 ls -l | sed -e "s/[aeio]/u/g"
+
+grep da * 2> grep-errors.txt
