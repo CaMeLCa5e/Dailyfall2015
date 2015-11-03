@@ -1,3 +1,9 @@
 ls -l | sed -e "s/[aeio]/u/g"
 
 grep da * 2> grep-errors.txt
+
+
+grep * 2>&1
+
+rm -f $(find / -name core) &> /dev/null 
+
