@@ -7,3 +7,8 @@ grep * 2>&1
 
 rm -f $(find / -name core) &> /dev/null 
 
+
+
+email hunter
+
+sell hack 
