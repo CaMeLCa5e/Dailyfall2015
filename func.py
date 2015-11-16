@@ -22,3 +22,13 @@ a = ["hello", "world", "!"]
 for i, x in enumerate(a):
     print '{}: {}'.format(i, x)
 
+
+m = {'a':1, 'b':2, 'c':3, 'd':4}
+for k, v in m.iteritems():
+    print '{}: {}'.format(k, v)
+
+a = [1,2,3,4,5,6]    
+group_adjacent = lambda a, k: zip(*([iter(a)]*k))
+print group_adjacent(a, 2)
+print group_adjacent(a, 3)
+print group_adjacent(a, 1)
