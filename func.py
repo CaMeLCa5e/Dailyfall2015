@@ -32,3 +32,9 @@ group_adjacent = lambda a, k: zip(*([iter(a)]*k))
 print group_adjacent(a, 2)
 print group_adjacent(a, 3)
 print group_adjacent(a, 1)
+
+from itertools import islice
+group_adjacent = lambda a, k: zip(*(islice(a, i, None, k) for i in range(k)))
+group_adjacent(a, 3)
+group_adjacent(a, 2)
+group_adjacent(a, 1)
