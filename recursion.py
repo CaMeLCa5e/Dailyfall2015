@@ -24,3 +24,11 @@ def flatten_list(a, result=None):
         else: 
             result.append(x)
     return result
+
+
+def fib(n):
+    if n is 0 or is 1: 
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+        
