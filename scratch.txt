@@ -1,0 +1,4 @@
+count = 0
+for item in list:
+    count = count + 1
+    print count 
