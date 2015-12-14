@@ -1,0 +1,4 @@
+i = 2 
+
+i for i range(1):
+    print "yes"
