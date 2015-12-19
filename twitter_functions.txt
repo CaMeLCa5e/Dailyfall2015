@@ -1,0 +1,9 @@
+setInterval(function(){t=$(".Grid .Grid--withGutter").find(".user-actions-follow-button");for(i=0;true;i++){if(i>=t.length){window.scrollTo(0,$(document).height());return}$(t[i]).trigger("click").remove()}},2000)﻿
+
+
+delete tweets
+$(".js-actionDelete").each(function() { $(this).trigger("click"); $(".delete-action").trigger("click"); });﻿
+
+un rt
+$('.js-actionRetweet').each(function() { $(this).trigger('click'); });
+
